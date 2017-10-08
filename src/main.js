@@ -1,3 +1,30 @@
-import greeting from './greeting';
+import Vue from 'vue'
+import VueRouter from 'vue-router'
 
-document.write(greeting('world!!!'));
+import store from 'store'
+import App from './App.vue'
+
+Vue.use(VueRouter)
+
+const routes = [
+  // { path: '/', component: Home },
+  // { path: '/hiragana', component: hiragana },
+  // { path: '/pronunciations1', component: pronunciationsOne },
+  // { path: '/pronunciations2', component: pronunciationsTwo },
+  // { path: '/greetings', component: greetings },
+]
+
+const router = new VueRouter({
+  mode: 'history',
+  routes,
+  scrollBehavior(to, from, savedPosition) {
+    return { x: 0, y: 0 }
+  }
+})
+
+new Vue({
+  el: '#app-sake',
+  router,
+  store,
+  render: h => h(App)
+})
