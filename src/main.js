@@ -3,11 +3,12 @@ import VueRouter from 'vue-router'
 
 import store from 'store'
 import App from './App.vue'
+import Home from 'components/Home.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
-  // { path: '/', component: Home },
+  { path: '/', component: Home },
   // { path: '/hiragana', component: hiragana },
   // { path: '/pronunciations1', component: pronunciationsOne },
   // { path: '/pronunciations2', component: pronunciationsTwo },
