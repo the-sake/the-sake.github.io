@@ -1,34 +1,51 @@
 <template>
   <div>
-    Home
     <!-- <Jumbotron></Jumbotron> -->
-    <RowList v-bind:sakes="sake.content"></RowList>
+    <div class="container">
+      <form>
+        <FilterBrand :brands="brands" v-on:swichBrand="swichBrand"></FilterBrand>
+        <FilterLevel :levels="levels" v-on:swichLevel="swichLevel"></FilterLevel>
+      </form>
+    </div>
+    <RowList v-bind:sakes="sakes"></RowList>
   </div>
 </template>
 
 <script>
 import { mapState, mapGetters, mapMutations, mapActions } from 'vuex'
 // import Jumbotron from './greetings/Jumbotron.vue'
+import FilterBrand from './home/FilterBrand.vue'
+import FilterLevel from './home/FilterLevel.vue'
 import RowList from './home/RowList.vue'
 import * as types from 'store/types'
 
 export default {
   components: {
     // Jumbotron,
+    FilterBrand,
+    FilterLevel,
     RowList,
   },
   computed: {
-    ...mapState([
-      'sake',
-    ]),
+    ...mapState({
+      brands: state => state.brand.list,
+      levels: state => state.level.list,
+    }),
+    ...mapGetters({
+      sakes: 'filterSake',
+    }),
   },
   methods: {
+    ...mapMutations({
+      swichBrand: types.SWITCH_BRAND,
+      swichLevel: types.SWITCH_LEVEL,
+    }),
     ...mapActions({
       fetch: types.FETCH_SAKE,
     }),
   },
   created() {
-    if (!this.sake.content.length) {
+    if (!this.sakes.length) {
       this.fetch()
     }
   },
@@ -36,10 +53,5 @@ export default {
 </script>
 
 <style>
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .5s
-}
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-  opacity: 0
-}
+
 </style>
