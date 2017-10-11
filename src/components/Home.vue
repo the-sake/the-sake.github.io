@@ -41,12 +41,12 @@ export default {
       swichLevel: types.SWITCH_LEVEL,
     }),
     ...mapActions({
-      fetch: types.FETCH_SAKE,
+      fetchSake: types.FETCH_SAKE,
     }),
   },
   created() {
     if (!this.sakes.length) {
-      this.fetch()
+      this.fetchSake()
     }
   },
 }
