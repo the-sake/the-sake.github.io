@@ -4,22 +4,32 @@ import * as types from 'store/types'
 const state = {
   content: [
   /*
-    {
-      "kName": "쿠보타 30주년 기념 준마이다이긴죠",
-      "jName": "久保田 三十周年 記念 純米大吟釀",
-      "eName": "KUBOTA 30th Anniversary Junmaidaiginjyo",
-      "description": "창업 당시의 초심과, 쿠보타 탄생30주년의 새로운 결의로  당신의 가슴을 울리는 최고의 쿠보타를 양조하였습니다. 배와 메론을 연상시키는 화려한 향이 먼저 탄성을 부르고, 절묘한 밸런스의 감미와 산미의 조화가 혀를 만족시키며, 잡미 없는 깔끔한 목넘김이 ‘역시 쿠보타’라는 찬사를 불러옵니다. 향미를 풍부하게 즐기시고 싶으시면 상온에서, 깔끔한 뒷맛을 느끼시고 싶으시면 매우 차갑게, 둘 다 놓치고 싶지 않으시면 살짝 차갑게 드십시오.",
-      "type": "다이긴죠(大吟釀)",
-      "alcohol": "15%",
-      "nihonShudo": "±0",
-      "acidity": "1.3",
-      "ricePolishingRate": "50%",
-      "volume": "720ml",
-      "company": "朝日酒造 아사히주조",
-      "local": "니이가타",
-      "importation": "(주)니혼슈코리아",
-      "sales": "구입가능"
-    }
+  {
+    "brandKO": "쿠보타",
+    "brandJP": "久保田",
+    "brandEN": "KUBOTA",
+    "productKO": "만쥬",
+    "productJA": "萬壽",
+    "productFU": "まんじゅ",
+    "descriptionKO": "향기로운 맛을 절묘하게 빗어낸 '쿠보타 시리즈'의 최고봉입니다. 조화로운 감칠맛으로 존재감을 어필합니다.",
+    "classificationKO": "준마이다이긴죠",
+    "classificationJA": "純米大吟醸",
+    "ingredientsKO": "고햐쿠만고쿠",
+    "ingredientsJP": "五百万石",
+    "ricePolishingRate": "50%",
+    "alcoholByVolume": "15%",
+    "sakeMeterValue": "+2",
+    "acidityLevel": "1.2",
+    "volumePrice": [
+      "1.8L 8,110円",
+      "720ml 3,640円"
+    ],
+    "companyKO": "아사히주조",
+    "companyJP": "朝日酒造",
+    "locationKO": "니가타",
+    "locationJP": "新潟県",
+    "imageURL": "product02_001"
+  }
   */
   ],
 }
