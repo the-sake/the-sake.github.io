@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="row">
-      <div class="col-sm-12 my-5" v-for="(sake, index) in sakes" :key="index">
+      <div class="col-sm-12 my-2" v-for="(sake, index) in sakes" :key="index">
         <Card :sake="sake"></Card>
       </div>
     </div>

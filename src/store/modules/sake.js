@@ -6,7 +6,7 @@ const state = {
   /*
   {
     "brandKO": "쿠보타",
-    "brandJP": "久保田",
+    "brandJA": "久保田",
     "brandEN": "KUBOTA",
     "productKO": "만쥬",
     "productJA": "萬壽",
@@ -15,7 +15,7 @@ const state = {
     "classificationKO": "준마이다이긴죠",
     "classificationJA": "純米大吟醸",
     "ingredientsKO": "고햐쿠만고쿠",
-    "ingredientsJP": "五百万石",
+    "ingredientsJA": "五百万石",
     "ricePolishingRate": "50%",
     "alcoholByVolume": "15%",
     "sakeMeterValue": "+2",
@@ -25,9 +25,9 @@ const state = {
       "720ml 3,640円"
     ],
     "companyKO": "아사히주조",
-    "companyJP": "朝日酒造",
+    "companyJA": "朝日酒造",
     "locationKO": "니가타",
-    "locationJP": "新潟県",
+    "locationJA": "新潟県",
     "imageURL": "product02_001"
   }
   */
