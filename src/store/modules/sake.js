@@ -21,14 +21,20 @@ const state = {
     "sakeMeterValue": "+2",
     "acidityLevel": "1.2",
     "volumePrice": [
-      "1.8L 8,110円",
-      "720ml 3,640円"
+      {
+        "volume": "1800ml",
+        "price": "8,110円"
+      },
+      {
+        "volume": "720ml",
+        "price": "3,640円"
+      }
     ],
     "companyKO": "아사히주조",
     "companyJA": "朝日酒造",
     "locationKO": "니가타",
     "locationJA": "新潟県",
-    "imageURL": "product02_001"
+    "imageURL": "p_kubota_001.png"
   }
   */
   ],

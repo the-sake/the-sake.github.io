@@ -3,25 +3,25 @@
     <div class="row">
       <div class="col-md-9">
         <div class="row">
-          <div class="col-6 col-md-4">
+          <div class="col-md-4">
             <h6 class="text-primary">{{ sake.classificationKO }}</h6>
           </div>
-          <div class="col-6 col-md-4">
+          <div class="col-md-4">
             <h6 class="text-primary">{{ sake.classificationJA }}</h6>
           </div>
         </div>
         <div class="row">
-          <div class="col-6 col-md-4">
+          <div class="col-md-4">
             <h3 class="">{{ sake.brandKO }} <ruby>{{ sake.productKO }} <rt>&nbsp;</rt></ruby></h3>
           </div>
-          <div class="col-6 col-md-4">
+          <div class="col-md-4">
             <h3>{{ sake.brandJA }} <ruby>{{ sake.productJA }} <rt>{{ sake.productFU }}</rt></ruby></h3>
           </div>
         </div>
         <p>{{ sake.descriptionKO }}</p>
       </div>
       <div class="col-md-3 my-3 px-5">
-        <img :src="image" class="img-fluid" alt="Responsive image">
+        <img v-bind:src="`./images/${sake.imageURL}` " class="img-fluid" alt="Responsive image">
       </div>
 
       <div class="col-6 col-md-3">
@@ -111,7 +111,10 @@
       </div>
       <div class="col-6 col-md-3">
         <h6 class="border-top py-3 mb-0">
-          <p class="mb-1" v-for="(price, index) in sake.volumePrice" :key="index">{{ price }}</p>
+          <p class="mb-1 clearfix" v-for="el in sake.volumePrice" :key="el.volume">
+            <span class="float-left">{{ el.volume }}</span>
+            <span class="float-right">{{ el.price }}</span>
+          </p>
         </h6>
       </div>
 
@@ -120,22 +123,10 @@
 </template>
 
 <script>
-import image from './pic_main_01.png'
-
 export default {
   props: [
     'sake'
   ],
-
-  data() {
-    return {
-      image
-    }
-  },
-
-  computed: {
-
-  }
 }
 </script>
 
