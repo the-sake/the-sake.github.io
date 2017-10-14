@@ -5,6 +5,16 @@
         <Card :sake="sake"></Card>
       </div>
     </div>
+
+    <div>
+      <ul>
+        가격 <a href="#price_1" title="가격은 소비 세금 별도"><sup>[1]</sup></a>
+        <li></li>
+        <li><span id="price_1">[1]</span>가격은 소비 세금 별도</li>
+        <li>가격</li>
+        <li>가격</li>
+      </ul>
+    </div>
   </div>
 </template>
 
