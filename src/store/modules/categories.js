@@ -5,24 +5,13 @@ const state = {
   content: [
   /*
   {
-    "nameKO": "쥰마이",
-    "nameJA": "純米",
-    "nameFurigana": "じゅんまい",
-    "mean": "순미",
-    "ruby": [
-      {
-        "kanji": "純",
-        "furigana": "じゅん",
-        "mean": "순수할 순"
-      },
-      {
-        "kanji": "米",
-        "furigana": "まい",
-        "mean": "쌀 미"
-      }
-    ],
-    "ricePolishingRate": "규제없음",
-    "price": "1,700 ~ 3,600円"
+    "nameKO": "준마이다이긴죠",
+    "nameJA": "純米大吟醸",
+    "furigana": "じゅんまいだいぎんじょう",
+    "mean": "순미대음양",
+    "description": "정미보합 50% 이하",
+    "price": "2,500円 ~",
+    "type": "junmai"
   },
   */
   ],

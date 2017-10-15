@@ -8,7 +8,7 @@
           <a class="nav-link">사케</a>
         </router-link>
         <router-link class="nav-item" active-class="active" to="/classification" tag="li">
-          <a class="nav-link">등급</a>
+          <a class="nav-link">분류</a>
         </router-link>
         <router-link class="nav-item" active-class="active" to="/brands" tag="li">
           <a class="nav-link">브랜드</a>

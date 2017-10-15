@@ -1,20 +1,25 @@
 <template>
   <div class="container">
-    <h1>사케등급</h1>
+    <Jombotron></Jombotron>
+    <RowList :categories="categories"></RowList>
   </div>
 </template>
 
 <script>
 import { mapState, mapGetters, mapMutations, mapActions } from 'vuex'
 
+import Jombotron from './classification/Jombotron.vue'
+import RowList from './classification/RowList.vue'
 import * as types from 'store/types'
 
 export default {
   components: {
+    Jombotron,
+    RowList,
   },
   computed: {
     ...mapState({
-      categories: state => state.categories,
+      categories: state => state.categories.content,
     }),
   },
   methods: {

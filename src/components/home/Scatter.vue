@@ -12,19 +12,13 @@ export default {
     'elements',
   ],
   mounted() {
-    console.log('mounted')
     scatter.drawScatter(this.elements)
   },
   watch: {
     elements: function() {
-      console.log('updated')
       scatter.updateScatter(this.elements)
     }
   },
-  // updated() {
-  //   console.log('updated')
-  //   scatter.updateScatter(this.elements)
-  // },
 }
 </script>
 
