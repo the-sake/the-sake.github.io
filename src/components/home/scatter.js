@@ -54,7 +54,6 @@ const yAxis = d3.axisRight(yScale)
                 .tickSize(500)
 
 const drawBackground = () => {
-  console.log('drawBackground')
   d3.select('svg')
     .append('g')
     .attr('id', 'bgGroup')
@@ -103,14 +102,12 @@ const drawBackground = () => {
 }
 
 const removeChart = () => {
-  console.log('removeChart')
   d3.select("svg")
     .selectAll("circle")
     .remove()
 }
 
 const drawChart = (data) => {
-  console.log('drawChart')
   d3.select("svg")
     .selectAll("circle")
     .data(data)

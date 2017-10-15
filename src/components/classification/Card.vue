@@ -7,6 +7,13 @@
       </h2>
     </div>
     <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        <small class="text-secondary">/
+        <template v-for="(el, index) in category.ruby">
+          <span :key="index">{{ el.mean }} / </span>
+        </template>
+        </small>
+      </li>
       <li class="list-group-item">{{ category.description }}</li>
       <li class="list-group-item">{{ category.price }}</li>
     </ul>
