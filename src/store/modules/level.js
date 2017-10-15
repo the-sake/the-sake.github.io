@@ -11,7 +11,7 @@ const state = {
     { enable: false, name: "토쿠베츠혼죠조" },
     { enable: false, name: "준마이" },
     { enable: false, name: "혼죠조" },
-    { enable: false, name: "보통주" },
+    { enable: false, name: "후츠슈" },
   ],
 }
 

@@ -1,7 +1,7 @@
 <template>
   <fieldset class="form-group">
     <div class="row">
-      <div class="col-sm-2">등급</div>
+      <div class="col-sm-2">특정명칭종별</div>
       <div class="col-sm-10">
         <div class="row">
           <div class="col-6" v-for="(level, index) in levels" v-bind:key="index">

@@ -72,7 +72,7 @@
 
       <div class="col-6 col-md-3">
         <h6 class="clearfix text-secondary border-top py-3 mb-0">
-          <span class="float-left">일본주도</span>
+          <span class="float-left">일본주도<a href="#meta_3" title="SakeMeterValue (SMV)"><sup>[3]</sup></a></span>
           <span class="float-right">日本酒度</span>
         </h6>
       </div>
@@ -105,7 +105,7 @@
 
       <div class="col-6 col-md-3">
         <h6 class="clearfix text-secondary border-top py-3 mb-0">
-          <span class="float-left">가격</span>
+          <span class="float-left">가격<a href="#meta_4" title="가격은 소비 세금 별도"><sup>[4]</sup></a></span>
           <span class="float-right">希望小売価格</span>
         </h6>
       </div>

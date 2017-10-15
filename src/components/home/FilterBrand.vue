@@ -10,7 +10,7 @@
                 <input class="form-check-input" type="checkbox"
                     v-bind:checked="brand.enable"
                     @change="toggle(brand.name, !brand.enable)">
-                {{brand.name}}
+                {{ brand.name }} {{ brand.nameJP }}
               </label>
             </div>
           </div>

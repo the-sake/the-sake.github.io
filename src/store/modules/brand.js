@@ -3,9 +3,9 @@ import * as types from 'store/types'
 
 const state = {
   list: [
-    { enable: false, name: "코시노 칸바이", nameJP: "" },
-    { enable: false, name: "쿠보타", nameJP: "" },
-    { enable: false, name: "핫까이산", nameJP: "" },
+    { enable: false, name: "코시노칸바이", nameJP: "越乃寒梅" },
+    { enable: false, name: "쿠보타", nameJP: "久保田" },
+    { enable: false, name: "핫카이산", nameJP: "八海山" },
     { enable: false, name: "닷사이", nameJP: "" },
   ],
 }
