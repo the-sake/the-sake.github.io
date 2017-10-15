@@ -1,11 +1,20 @@
 <template>
   <div>
-    <!-- <Jumbotron></Jumbotron> -->
     <div class="container">
-      <form>
-        <FilterBrand :brands="brands" v-on:swichBrand="swichBrand"></FilterBrand>
-        <FilterLevel :levels="levels" v-on:swichLevel="swichLevel"></FilterLevel>
-      </form>
+      <div class="jumbotron">
+        <div class="row">
+          <div class="col-lg-6">
+            <form>
+              <FilterBrand :brands="brands" v-on:swichBrand="swichBrand"></FilterBrand>
+              <FilterLevel :levels="levels" v-on:swichLevel="swichLevel"></FilterLevel>
+            </form>
+          </div>
+          <div class="col-lg-6">
+            <h4>일본주도 x 산도</h4>
+            <Scatter v-bind:elements="elements"></Scatter>
+          </div>
+        </div>
+      </div>
     </div>
     <RowList v-bind:sakes="sakes"></RowList>
   </div>
@@ -13,7 +22,8 @@
 
 <script>
 import { mapState, mapGetters, mapMutations, mapActions } from 'vuex'
-// import Jumbotron from './greetings/Jumbotron.vue'
+
+import Scatter from './home/Scatter.vue'
 import FilterBrand from './home/FilterBrand.vue'
 import FilterLevel from './home/FilterLevel.vue'
 import RowList from './home/RowList.vue'
@@ -21,7 +31,7 @@ import * as types from 'store/types'
 
 export default {
   components: {
-    // Jumbotron,
+    Scatter,
     FilterBrand,
     FilterLevel,
     RowList,
@@ -33,6 +43,7 @@ export default {
     }),
     ...mapGetters({
       sakes: 'filterSake',
+      elements: 'filterElements',
     }),
   },
   methods: {
