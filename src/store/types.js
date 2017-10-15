@@ -8,7 +8,7 @@ export const SWITCH_BRAND = 'brand/SWITCH_BRAND'
 // Level
 export const SWITCH_LEVEL = 'level/SWITCH_LEVEL'
 
-//
-export const FILTER_BRAND_SAKE = 'sake/FILTER_BRAND_SAKE'
-export const FILTER_TYPE_SAKE = 'sake/FILTER_TYPE_SAKE'
-export const FILTER_COMPANY_SAKE = 'sake/FILTER_COMPANY_SAKE'
+// Categories
+export const FETCH_CATEGORIES = 'category/FETCH_CATEGORIES'
+export const RECEIVE_CATEGORIES = 'category/RECEIVE_CATEGORIES'
+

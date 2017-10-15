@@ -5,9 +5,7 @@ import * as getters from './getters'
 import sake from './modules/sake'
 import brand from './modules/brand'
 import level from './modules/level'
-// import pronunciationsOne from './modules/pronunciationsOne'
-// import pronunciationsTwo from './modules/pronunciationsTwo'
-// import greetings from './modules/greetings'
+import categories from './modules/categories'
 
 Vue.use(Vuex)
 
@@ -18,9 +16,7 @@ export default new Vuex.Store({
     sake,
     brand,
     level,
-    // pronunciationsOne,
-    // pronunciationsTwo,
-    // greetings,
+    categories,
   },
 
   strict: process.env.NODE_ENV !== 'production'

@@ -21,4 +21,11 @@ export default {
       .then((snapshot) => snapshot.val())
   },
 
+  getCategories() {
+    return firebase.database()
+      .ref('/categories/')
+      .once('value')
+      .then((snapshot) => snapshot.val())
+  },
+
 }

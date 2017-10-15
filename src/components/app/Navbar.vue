@@ -7,16 +7,16 @@
         <router-link class="nav-item" active-class="active" to="/" tag="li" exact>
           <a class="nav-link">사케</a>
         </router-link>
-        <router-link class="nav-item" active-class="active" to="/hiragana" tag="li">
-          <a class="nav-link">브랜드</a>
-        </router-link>
-        <router-link class="nav-item" active-class="active" to="/pronunciations1" tag="li">
+        <router-link class="nav-item" active-class="active" to="/classification" tag="li">
           <a class="nav-link">등급</a>
         </router-link>
-        <router-link class="nav-item" active-class="active" to="/pronunciations2" tag="li">
+        <router-link class="nav-item" active-class="active" to="/brands" tag="li">
+          <a class="nav-link">브랜드</a>
+        </router-link>
+        <router-link class="nav-item" active-class="active" to="/issue" tag="li">
           <a class="nav-link">통관</a>
         </router-link>
-        <router-link class="nav-item" active-class="active" to="/greetings" tag="li">
+        <router-link class="nav-item" active-class="active" to="/about" tag="li">
           <a class="nav-link">about</a>
         </router-link>
       </ul>

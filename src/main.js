@@ -4,16 +4,14 @@ import VueRouter from 'vue-router'
 import store from 'store'
 import App from './App.vue'
 import Home from 'components/Home.vue'
+import Classification from 'components/Classification.vue'
 import './assets/style.css'
 
 Vue.use(VueRouter)
 
 const routes = [
   { path: '/', component: Home },
-  // { path: '/hiragana', component: hiragana },
-  // { path: '/pronunciations1', component: pronunciationsOne },
-  // { path: '/pronunciations2', component: pronunciationsTwo },
-  // { path: '/greetings', component: greetings },
+  { path: '/classification', component: Classification },
 ]
 
 const router = new VueRouter({
