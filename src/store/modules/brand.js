@@ -6,7 +6,7 @@ const state = {
     { enable: false, name: "코시노칸바이", nameJP: "越乃寒梅" },
     { enable: false, name: "쿠보타", nameJP: "久保田" },
     { enable: false, name: "핫카이산", nameJP: "八海山" },
-    { enable: false, name: "닷사이", nameJP: "" },
+    { enable: false, name: "닷사이", nameJP: "獺祭" },
   ],
 }
 

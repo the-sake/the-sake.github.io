@@ -3,18 +3,18 @@
     <div class="row">
       <div class="col-md-9">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-6">
             <h6 class="text-primary">{{ sake.classificationKO }}</h6>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-6">
             <h6 class="text-primary">{{ sake.classificationJA }}</h6>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-6">
             <h3 class="">{{ sake.brandKO }} <ruby>{{ sake.productKO }} <rt>&nbsp;</rt></ruby></h3>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-6">
             <h3>{{ sake.brandJA }} <ruby>{{ sake.productJA }} <rt>{{ sake.productFU }}</rt></ruby></h3>
           </div>
         </div>
