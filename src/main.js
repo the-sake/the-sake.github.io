@@ -5,6 +5,7 @@ import store from 'store'
 import App from './App.vue'
 import Home from 'components/Home.vue'
 import Classification from 'components/Classification.vue'
+import Brands from 'components/Brands.vue'
 import './assets/style.css'
 
 Vue.use(VueRouter)
@@ -12,6 +13,7 @@ Vue.use(VueRouter)
 const routes = [
   { path: '/', component: Home },
   { path: '/classification', component: Classification },
+  { path: '/brands', component: Brands },
 ]
 
 const router = new VueRouter({

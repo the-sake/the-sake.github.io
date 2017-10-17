@@ -1,35 +1,37 @@
 <template>
   <div class="container">
     <Jumbotron></Jumbotron>
-    <RowList :categories="categories"></RowList>
+    <template v-for="(company, index) in companies">
+      <Card :company="company" :key="index"></Card>
+    </template>
   </div>
 </template>
 
 <script>
 import { mapState, mapGetters, mapMutations, mapActions } from 'vuex'
 
-import Jumbotron from './classification/Jumbotron.vue'
-import RowList from './classification/RowList.vue'
+import Jumbotron from './brands/Jumbotron.vue'
+import Card from './brands/Card.vue'
 import * as types from 'store/types'
 
 export default {
   components: {
     Jumbotron,
-    RowList,
+    Card,
   },
   computed: {
     ...mapState({
-      categories: state => state.categories.content,
+      companies: state => state.companies.content,
     }),
   },
   methods: {
     ...mapActions({
-      fetchCategories: types.FETCH_CATEGORIES,
+      fetchCompanies: types.FETCH_COMPANIES,
     }),
   },
   created() {
-    if (!this.categories.length) {
-      this.fetchCategories()
+    if (!this.companies.length) {
+      this.fetchCompanies()
     }
   },
 }

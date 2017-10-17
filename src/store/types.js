@@ -12,3 +12,6 @@ export const SWITCH_LEVEL = 'level/SWITCH_LEVEL'
 export const FETCH_CATEGORIES = 'category/FETCH_CATEGORIES'
 export const RECEIVE_CATEGORIES = 'category/RECEIVE_CATEGORIES'
 
+// Companies
+export const FETCH_COMPANIES = 'company/FETCH_COMPANIES'
+export const RECEIVE_COMPANIES = 'company/RECEIVE_COMPANIES'

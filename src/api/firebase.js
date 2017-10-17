@@ -28,4 +28,11 @@ export default {
       .then((snapshot) => snapshot.val())
   },
 
+  getCompanies() {
+    return firebase.database()
+      .ref('/brands/')
+      .once('value')
+      .then((snapshot) => snapshot.val())
+  },
+
 }
