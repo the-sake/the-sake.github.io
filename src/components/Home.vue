@@ -1,65 +1,15 @@
 <template>
-  <div>
-    <div class="container">
-      <div class="jumbotron">
-        <div class="row">
-          <div class="col-lg-6">
-            <form>
-              <FilterBrand :brands="brands" v-on:swichBrand="swichBrand"></FilterBrand>
-              <FilterLevel :levels="levels" v-on:swichLevel="swichLevel"></FilterLevel>
-            </form>
-          </div>
-          <div class="col-lg-6">
-            <h4>일본주도 x 산도</h4>
-            <Scatter v-bind:elements="elements"></Scatter>
-          </div>
-        </div>
-      </div>
+  <div class="container">
+    <div class="jumbotron">
+      <h1 class="display-1">酒</h1>
+      <h1 class="display-1　wf-notosansjapanese">さけ</h1>
     </div>
-    <RowList v-bind:sakes="sakes"></RowList>
   </div>
 </template>
 
 <script>
-import { mapState, mapGetters, mapMutations, mapActions } from 'vuex'
-
-import Scatter from './home/Scatter.vue'
-import FilterBrand from './home/FilterBrand.vue'
-import FilterLevel from './home/FilterLevel.vue'
-import RowList from './home/RowList.vue'
-import * as types from 'store/types'
-
 export default {
-  components: {
-    Scatter,
-    FilterBrand,
-    FilterLevel,
-    RowList,
-  },
-  computed: {
-    ...mapState({
-      brands: state => state.brand.list,
-      levels: state => state.level.list,
-    }),
-    ...mapGetters({
-      sakes: 'filterSake',
-      elements: 'filterElements',
-    }),
-  },
-  methods: {
-    ...mapMutations({
-      swichBrand: types.SWITCH_BRAND,
-      swichLevel: types.SWITCH_LEVEL,
-    }),
-    ...mapActions({
-      fetchSake: types.FETCH_SAKE,
-    }),
-  },
-  created() {
-    if (!this.sakes.length) {
-      this.fetchSake()
-    }
-  },
+
 }
 </script>
 

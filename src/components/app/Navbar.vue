@@ -5,6 +5,9 @@
       <div>
       <ul class="navbar-nav mr-auto">
         <router-link class="nav-item" active-class="active" to="/" tag="li" exact>
+          <a class="nav-link">홈</a>
+        </router-link>
+        <router-link class="nav-item" active-class="active" to="/sake" tag="li">
           <a class="nav-link">사케</a>
         </router-link>
         <router-link class="nav-item" active-class="active" to="/classification" tag="li">
@@ -15,9 +18,6 @@
         </router-link>
         <router-link class="nav-item" active-class="active" to="/issue" tag="li">
           <a class="nav-link">통관</a>
-        </router-link>
-        <router-link class="nav-item" active-class="active" to="/about" tag="li">
-          <a class="nav-link">about</a>
         </router-link>
       </ul>
       </div>

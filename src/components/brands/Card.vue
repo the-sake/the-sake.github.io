@@ -2,7 +2,7 @@
   <div class="border p-3 my-3">
   <div class="row">
     <div class="col-md-3">
-      <img class="img-fluid" style="height: 250px;" :src="'/images/' + company.imageURL" alt="">
+      <img class="img-fluid" style="width: 100%;" :src="'/images/' + company.imageURL" alt="">
     </div>
     <div class="col-md-9">
       <dl class="row mb-0">
