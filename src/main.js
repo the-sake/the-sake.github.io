@@ -4,14 +4,19 @@ import VueRouter from 'vue-router'
 import store from 'store'
 import App from './App.vue'
 import Home from 'components/Home.vue'
+import Sake from 'components/Sake.vue'
 import Classification from 'components/Classification.vue'
 import Brands from 'components/Brands.vue'
+import './assets/nicomoji.css'
+import './assets/notosansjapanese.css'
 import './assets/style.css'
+
 
 Vue.use(VueRouter)
 
 const routes = [
   { path: '/', component: Home },
+  { path: '/sake', component: Sake },
   { path: '/classification', component: Classification },
   { path: '/brands', component: Brands },
 ]
