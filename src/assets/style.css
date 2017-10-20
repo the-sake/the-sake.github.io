@@ -1,6 +1,9 @@
+@import url(/fonts/nicomoji.css);
+@import url(/fonts/notosansjapanese.css);
+
 body {
-  font-family: 'Noto Sans Japanese', sans-serif;
-  /* font-family: 'Nico Moji', cursive; */
+  /* font-family: 'Noto Sans Japanese', sans-serif; */
+  font-family: 'Nico Moji', cursive;
 }
 
 @media (min-width: 1600px)

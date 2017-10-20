@@ -94,7 +94,7 @@ if (process.env.NODE_ENV === 'production') {
       minimize: true
     }),
     new CopyWebpackPlugin([
-      { from: 'data/images', to: 'images' }
+      { from: 'data', to: '' }
     ])
   ])
 }

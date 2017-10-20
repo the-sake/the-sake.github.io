@@ -7,8 +7,6 @@ import Home from 'components/Home.vue'
 import Sake from 'components/Sake.vue'
 import Classification from 'components/Classification.vue'
 import Brands from 'components/Brands.vue'
-import './assets/nicomoji.css'
-import './assets/notosansjapanese.css'
 import './assets/style.css'
 
 
