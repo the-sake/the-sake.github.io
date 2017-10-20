@@ -7,6 +7,7 @@ const state = {
   {
     "brandKO": "쿠보타",
     "brandJA": "久保田",
+    "brandFU": "くぼた",
     "brandEN": "KUBOTA",
     "companyKO": "아사히슈조",
     "companyJA": "朝日酒造",
@@ -18,6 +19,23 @@ const state = {
       "EN": "http://www.asahi-shuzo.co.jp/en/",
       "KO": "http://www.asahi-shuzo.co.jp/kr/"
     },
+    "ruby": [
+      {
+        "kanji": "久",
+        "furigana": "く",
+        "mean": "오랠 구"
+      },
+      {
+        "kanji": "保",
+        "furigana": "ほ",
+        "mean": "지킬 보"
+      },
+      {
+        "kanji": "田",
+        "furigana": "た",
+        "mean": "밭 전"
+      }
+    ],
     "imageURL": "b_kubota_001.png"
   },
   */
@@ -29,7 +47,6 @@ const getters = {
 
 const mutations = {
   [types.RECEIVE_COMPANIES] (state, {companies}) {
-    console.log(companies)
     state.content = companies
   },
 }
