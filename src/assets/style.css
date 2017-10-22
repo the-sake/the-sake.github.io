@@ -1,10 +1,13 @@
-@import url(/fonts/nicomoji.css);
-@import url(/fonts/notosansjapanese.css);
+/* @import url(/fonts/nicomoji.css); */
+/* @import url(/fonts/notosansjapanese.css); */
+/* @import url(/fonts/sawarabimincho.css); */
 
-body {
+@import url(//fonts.googleapis.com/earlyaccess/kokoro.css);
+@import url(//fonts.googleapis.com/earlyaccess/sawarabimincho.css);
+
+/* body {
   font-family: 'Noto Sans Japanese', sans-serif;
-  /* font-family: 'Nico Moji', cursive; */
-}
+} */
 
 @media (min-width: 1600px)
 {
