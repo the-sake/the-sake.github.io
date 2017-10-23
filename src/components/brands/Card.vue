@@ -1,13 +1,20 @@
 <template>
   <div class="border p-3 my-3">
     <div class="row">
+      <div class="col-lg-5 order-lg-2 mb-3">
+        <div class="d-flex flex-md-row justify-content-md-between flex-lg-column">
+          <h1 class="display-4 mb-md-3 vertical">
+            <ruby>{{ company.brandJA }} <rp>（</rp><rt>{{ company.brandFU }}</rt><rp>)</rp></ruby>
+          </h1>
+        </div>
+      </div>
       <div class="col-lg-7">
         <dl class="row mb-0">
           <dt class="col-sm-2">브랜드명</dt>
           <dd class="col-sm-10">{{ company.brandKO }}</dd>
-          <dt class="col-sm-2">양조원</dt>
+          <dt class="col-sm-2">제조회사</dt>
           <dd class="col-sm-10">{{ company.companyKO }} <span class="text-secondary">{{ company.companyJA }}</span></dd>
-          <dt class="col-sm-2">산지</dt>
+          <dt class="col-sm-2">생산지</dt>
           <dd class="col-sm-10">{{ company.locationKO }} <span class="text-secondary">{{ company.locationJA }}</span></dd>
           <dt class="col-sm-2">특징</dt>
           <dd class="col-sm-10">{{ company.feature }}</dd>
@@ -20,13 +27,6 @@
             </template>
           </dd>
         </dl>
-      </div>
-      <div class="col-lg-5 mb-3">
-        <div class="d-flex flex-md-row justify-content-md-between flex-lg-column">
-          <h1 class="display-4 mb-md-3 vertical">
-            <ruby>{{ company.brandJA }} <rp>（</rp><rt>{{ company.brandFU }}</rt><rp>)</rp></ruby>
-          </h1>
-        </div>
       </div>
     </div>
   </div>
@@ -54,8 +54,10 @@ export default {
 </script>
 
 <style>
-.vertical {
-  text-orientation: upright;
-  writing-mode: vertical-rl;
+@media (min-width: 1024px) {
+  .vertical {
+    text-orientation: upright;
+    writing-mode: vertical-rl;
+  }
 }
 </style>

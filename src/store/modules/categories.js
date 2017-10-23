@@ -18,6 +18,15 @@ const state = {
 }
 
 const getters = {
+  getJunmai: state => {
+    return state.content.filter(item => item.type === 'junmai')
+  },
+  getHonjozo: state => {
+    return state.content.filter(item => item.type === 'honjozo')
+  },
+  getFutsushu: state => {
+    return state.content.filter(item => item.type === 'futsushu')
+  },
 }
 
 const mutations = {

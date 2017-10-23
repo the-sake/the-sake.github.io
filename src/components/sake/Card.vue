@@ -18,7 +18,7 @@
             <h3>{{ sake.brandJA }} <ruby>{{ sake.productJA }} <rt>{{ sake.productFU }}</rt></ruby></h3>
           </div>
         </div>
-        <p>{{ sake.descriptionKO }}</p>
+        <p class="pt-3">{{ sake.descriptionKO }}</p>
       </div>
       <div class="col-md-3 my-3 px-5">
         <img v-bind:src="`./images/${sake.imageURL}` " class="img-fluid" alt="Responsive image">
