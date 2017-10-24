@@ -120,6 +120,7 @@ const drawChart = (data) => {
 
 export const drawScatter = (data) => {
   drawBackground()
+  drawChart(data)
 }
 
 export const updateScatter = (data) => {
