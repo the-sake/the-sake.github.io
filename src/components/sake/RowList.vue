@@ -7,8 +7,6 @@
     </div>
     <div>
       <ul>
-        일본주도 <a href="#meta_3" title="SakeMeterValue (SMV)"><sup>[3]</sup></a>
-        가격 <a href="#meta_4" title="가격은 소비 세금 별도"><sup>[4]</sup></a>
         <li><span id="meta_1">[1]</span> 상세, 상품정보의 성분치는 관리 목표 치입니다.</li>
         <li><span id="meta_2">[2]</span> 特定名称種別 특정 명칭 종별</li>
         <li><span id="meta_3">[3]</span> SakeMeterValue (SMV)</li>

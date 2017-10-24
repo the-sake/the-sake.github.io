@@ -16,9 +16,6 @@
         <router-link class="nav-item" active-class="active" to="/brands" tag="li">
           <a class="nav-link">브랜드</a>
         </router-link>
-        <router-link class="nav-item" active-class="active" to="/issue" tag="li">
-          <a class="nav-link">통관</a>
-        </router-link>
       </ul>
       </div>
     </nav>
