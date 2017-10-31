@@ -23,7 +23,9 @@
             <template v-for="(value, key) in company.links">
               <a class="btn btn-outline-primary btn-sm"
                  :key="key"
-                 :href="value" target="_blank">{{linkName(key)}}</a>&#160;
+                 :href="value"
+                 target="_blank"
+                 rel="noopener">{{linkName(key)}}</a>&#160;
             </template>
           </dd>
         </dl>
@@ -60,4 +62,5 @@ export default {
     writing-mode: vertical-rl;
   }
 }
+
 </style>

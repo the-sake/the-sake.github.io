@@ -62,7 +62,7 @@
 
       <div class="col-6 col-md-3">
         <h6 class="clearfix text-secondary border-top py-3 mb-0">
-          <span class="float-left">알코올성분</span>
+          <span class="float-left">알코올도수 </span>
           <span class="float-right">アルコール度数</span>
         </h6>
       </div>
