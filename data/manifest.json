@@ -2,7 +2,7 @@
   "short_name": "The Sake",
   "name": "The Sake; 더 사케;",
   "description": "유명 사케에 대한 정보",
-  "start_url": "index.html?launcher=true",
+  "start_url": ".",
   "icons": [
     {
       "src": "favicon-32x32.png",
@@ -30,8 +30,8 @@
       "sizes": "512x512"
     }
   ],
-  "background_color": "#ffffff",
-  "theme_color": "#ffffff",
+  "background_color": "#4960d4",
+  "theme_color": "#4960d4",
   "display": "standalone",
   "orientation": "portrait"
 }
