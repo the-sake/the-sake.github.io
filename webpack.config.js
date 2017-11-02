@@ -106,7 +106,7 @@ if (process.env.NODE_ENV === 'production') {
         filename: 'service-worker.js',
         minify: true,
         navigateFallback: PUBLIC_PATH + 'index.html',
-        staticFileGlobsIgnorePatterns: [/\.map$/, /asset-manifest\.json$/],
+        staticFileGlobsIgnorePatterns: [/\.map$/, /manifest\.json$/],
       }
     ),
   ])
