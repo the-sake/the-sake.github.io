@@ -3,6 +3,9 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin');
+
+const PUBLIC_PATH = 'https://the-sake.netlify.com/';
 
 module.exports = {
   entry: {
@@ -95,6 +98,16 @@ if (process.env.NODE_ENV === 'production') {
     }),
     new CopyWebpackPlugin([
       { from: 'data', to: '' }
-    ])
+    ]),
+    new SWPrecacheWebpackPlugin(
+      {
+        cacheId: 'the-sake',
+        dontCacheBustUrlsMatching: /\.\w{8}\./,
+        filename: 'service-worker.js',
+        minify: true,
+        navigateFallback: PUBLIC_PATH + 'index.html',
+        staticFileGlobsIgnorePatterns: [/\.map$/, /asset-manifest\.json$/],
+      }
+    ),
   ])
 }
