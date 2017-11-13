@@ -1,10 +1,17 @@
 <template>
   <div class="container">
-    <div class="jumbotron">
-      <h1 class="display-1">酒</h1>
-      <h1 class="display-1">さけ</h1>
+    <div class="card border-secondary mb-3">
+      <div class="card-header bg-transparent border-secondary h1">さけ 사케</div>
+      <div class="card-body ">
+        <h4 class="display-1">酒</h4>
+      </div>
     </div>
-    <h1>제작 중</h1>
+    <div class="card border-secondary mb-3">
+      <div class="card-header bg-transparent border-secondary h1">にほんしゅ 니혼슈</div>
+      <div class="card-body ">
+        <h4 class="display-1">日本酒</h4>
+      </div>
+    </div>
   </div>
 </template>
 
