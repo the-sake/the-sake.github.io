@@ -10,15 +10,15 @@
       </div>
       <div class="col-lg-7">
         <dl class="row mb-0">
-          <dt class="col-sm-3">브랜드명</dt>
+          <dt class="col-sm-3 text-sm-right">브랜드명</dt>
           <dd class="col-sm-9">{{ company.brandKO }}</dd>
-          <dt class="col-sm-3">제조회사</dt>
+          <dt class="col-sm-3 text-sm-right">제조회사</dt>
           <dd class="col-sm-9">{{ company.companyKO }} <span class="text-secondary">{{ company.companyJA }}</span></dd>
-          <dt class="col-sm-3">생산지</dt>
+          <dt class="col-sm-3 text-sm-right">생산지</dt>
           <dd class="col-sm-9">{{ company.locationKO }} <span class="text-secondary">{{ company.locationJA }}</span></dd>
-          <dt class="col-sm-3">특징</dt>
+          <dt class="col-sm-3 text-sm-right">특징</dt>
           <dd class="col-sm-9">{{ company.feature }}</dd>
-          <dt class="col-sm-3">링크</dt>
+          <dt class="col-sm-3 text-sm-right">링크</dt>
           <dd class="col-sm-9">
             <template v-for="(value, key) in company.links">
               <a class="btn btn-outline-primary btn-sm"
